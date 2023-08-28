@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+обувь
+{% endblock %}
+
+
+{% block content %}
+<div class="shoes">
+    <h1>  Ботинки </h1>
+</div>
+
+<nav>
+<ul>
+    <li> <a href="{{ url_for('sho1') }}">Ботинки1</a></li>
+    <li> <a href="{{ url_for('sho2') }}">Ботинки2</a></li>
+    <li> <a href="{{ url_for('sho3') }}">Ботинки3</a></li>
+</ul>
+</nav>
+{% endblock %}

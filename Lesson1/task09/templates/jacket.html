@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+куртки
+{% endblock %}
+
+
+{% block content %}
+<div class="jacket">
+    <h1> Куртки </h1>
+
+</div>
+
+<nav>
+<ul>
+    <li> <a href="{{ url_for('jac1') }}">Куртка1</a></li>
+    <li> <a href="{{ url_for('jac2') }}">Куртка2</a></li>
+    <li> <a href="{{ url_for('jac3') }}">Куртка3</a></li>
+</ul>
+</nav>
+{% endblock %}
