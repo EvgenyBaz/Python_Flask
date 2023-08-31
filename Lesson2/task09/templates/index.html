@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+     {% if name %}
+        <h1>Привет, {{ name }}</h1>
+        <button><a href="{{url_for('log_out')}}">Log out</a></button>
+     {% else %}
+        <h1>Привет</h1>
+        <button><a href="{{url_for('log')}}">Log in</a></button>
+     {% endif %}
+{% endblock %}
